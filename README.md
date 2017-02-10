@@ -1,16 +1,10 @@
 # 大前端工具集 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-这个项目的定位是 **大前端程序猿的百宝箱**，主要针对 前端方向和 Node方向。主要内容是我了解过的库、工具、套路、设计/交互或关注的前端组织/博客等等，反正用 **瑞士军刀** 来总结这篇文章再合适不过了。
+这个项目的定位是 **大前端程序猿的百宝箱**。主要针对 前端方向和 Node 方向；主要内容是国内外优秀的库、工具、套路、设计/交互或关注的前端组织/博客等等，反正用 **瑞士军刀** 来总结这篇文章再合适不过了。
+
+对于列在这里的几乎所有项目，我都有去实践与了解，所以我会尽量给出中肯的建议和理解，也希望大家能多关注我的评语:)
 
 > 感谢和期待大家的 PR，我会及时回复的~
-
-#### 图标解释
-
-![opensource][opensource_icon] 开源项目；  
-![free][free_icon] 可 **免费** 使用；  
-![hot][hot_icon] 近期热门的 Case；  
-![rec][rec_icon] 推荐使用和了解；  
-![must][must_icon] 表示必备，最强的推荐意愿；
 
 ---
 
@@ -38,6 +32,7 @@
 - [Git](#git)
 - [服务端](#servers)
 - [数据端](#backend)
+- [客户端](#client)
 - [设计/交互](#ux)
 - [速查手册](#handbook)
 - [杂七杂八](#other)
@@ -58,9 +53,9 @@
 - [慕课](http://www.imooc.com/) - 大量的在线计算机课程。 虽然初、中级居多，但是不乏有巨作值得细细品尝
 - [阮一峰](http://javascript.ruanyifeng.com/) - 关注多年，拜读其 [ES6](http://es6.ruanyifeng.com/) 系列。虽网传靠写书进鸟阿里，但博客内容确实够丰富
 - [W3Cplus](http://www.w3cplus.com/) - 大漠(《图解 CSS3》作者)在国内的影响力杠杠的，```Sass``` 专家级
-- [淘宝前端团队](http://taobaofed.org/) - 内容涵盖 ```Web``` 和 ```Node```，要深度游深度，要广度有广度
+- [淘宝前端团队](http://taobaofed.org/) - 内容涵盖 ```Web``` 和 ```Node```，要深度有深度，要广度有广度
 - [奇舞团博客](http://www.75team.com/) - 坚持是最宝贵的，别人的奇舞周刊早已经过百期了
-- [大搜车前端](http://f2e.souche.com/blog/) - 前端网红 [小芋头君](http://weibo.com/676588498) 所在的团队，文章质量非常高，尤其是 Node 方向的
+- [大搜车前端](http://f2e.souche.com/blog/) - 前端网红 [小芋头君](http://weibo.com/676588498) 所在的团队，文章质量高，尤其是 Node 方向的
 - [百度 FEX](http://fex.baidu.com/) - 代表作 ```FIS```、```UEditor```、```WebUploader```、```KityMinder```
 - [腾讯全端 AlloyTeam](http://www.alloyteam.com/) - 腾讯 Web 前端团队，博客真的有点丑...
 - [粉丝日志 for 张丹](http://blog.fens.me/) - 大爱作者写的 ```Node``` 系列
@@ -103,6 +98,7 @@
 - [MetroUI](http://metroui.org.ua/) - 好看好用，重点是样式特别、个性
 - [Font-Awesome](http://fontawesome.io/) - 图标字体库。相类似的库有不少，大厂都喜欢造轮子嘛:)
 - [LoadersCSS](https://connoratherton.com/loaders) - 用 CSS 技术实现 loading 动画； 补一句，想熟悉、理解 ```keyframes、animation、transform、transition``` 的童鞋可以直接去读其源码(只有千把行代码)，读完就算出师鸟:)
+- [text-spinners](https://github.com/tawian/text-spinners) - 又是一款 spinners 效果的库，用来做 loading 正合适。
 - [WeUI](https://github.com/weui/weui) - 一套同微信原生视觉体验一致的基础样式库 为微信 Web 开发量身设计，令用户的使用感知更加统一
 - [PostCSS](https://github.com/postcss/postcss) - 最近才知道大名鼎鼎[Autoprefixer](https://github.com/postcss/autoprefixer)是其插件 推荐大漠的文章[《PostCSS深入学习》](http://www.w3cplus.com/PostCSS/postcss-deep-dive-what-you-need-to-know.html)，有关 PostCSS 不是什么？PostCSS 是什么？PostCSS 可以做什么等等问题，文章里面有答案
 - [CSSgram](https://github.com/una/CSSgram) - 图片滤镜库，终于可以用 CSS 在 web 上实现滤镜的效果鸟 IE不支持，不过新的移动设备支持没问题 [Can I Use](http://caniuse.com/#search=CSS%20Blend%20Modes)
@@ -119,12 +115,16 @@
 <h3 id="javascript">浏览端 JS</h3>
 
 - [requirejs](https://github.com/requirejs/requirejs) - JS模块化是构建复杂项目的第一步 中文学习文档奉上：[RequireJS 中文网](http://www.requirejs.cn/)
+- [three.js](https://github.com/mrdoob/three.js) - JavaScript 3D 库。超多的 [examples](http://threejs.org/examples/) 等着你去发现，你只需要关注内存和风扇就行了
 - [ECharts](http://echarts.baidu.com/index.html) - 好用，最关键的是支持的图表展示非常之多，强烈推荐
 - [Swiper](http://www.swiper.com.cn) - 强大的 Slider 库 其实这类效果库非常多，但文档能那么专业的就很少鸟
 - [babel](https://babeljs.io/) - ```ES6``` 用起来。这个插件可以让我们用新的 **标准/提案** 写 ```JavaScript``` 代码，然后再向下 **转换编译**，最终生成随处可用的 ```JavaScript``` 代码。中文文档奉上[《babel-handbook》](https://github.com/thejameskyle/babel-handbook/blob/master/translations/zh-Hans/README.md)
+- [dvajs](https://github.com/dvajs/dva) - 基于 Redux 的一层封装，推荐的原因是因为阿里同学写文档都比较大而全，还可以顺道学习周边知识:)
 - [fullPage](http://alvarotrigo.com/fullPage/) - 非常好用的全屏滑动库，看 Demo 就明白
 - [PhotoSwipe](http://photoswipe.com/) - 偶常用的 js 库 官网上有这么一句很关键、重要"no dependencies"
 - [Vuejs](http://cn.vuejs.org) - 比较喜欢其作者... 所以劳资正在看源码学习学习
+- [ScrollReveal](https://github.com/jlmakes/scrollreveal.js) - star 10000+ 轻量级 JS 库。作用为当元素进入视窗的时候展示它们，README 中有示例，上手非常简单。官网体验地址：[ScrollReveal](https://scrollrevealjs.org/)
+- [vue-admin](https://github.com/fundon/vue-admin) - 基于 Vue.js 开发的后台，示例地址：[demo](https://vue-admin.fundon.me)
 - [mixitup](https://github.com/patrickkunka/mixitup) 一款基于 ```jQuery``` 的 **排序/过滤** 的JS库，最关键是有着美妙的动画效果
 - [favico.js](http://lab.ejci.net/favico.js/) - 动态改变浏览器标签栏中的网站图标，非常好玩
 - [ant.design](http://ant.design) - 蚂蚁金服搞的良心项目，文档美好的令人发指 样式优雅，强烈推荐内部系统尝试此库
@@ -158,6 +158,7 @@
 - [Grunt](http://gruntjs.com/) - 和 Gulp 类似，都是项目构建的常见选择 对比这俩的文章可谓不少，推荐篇[《Gulp vs Grunt》](http://www.benben.cc/blog/?p=407) 英盲又想看文档，可以去[Grunt 中文网](http://www.gruntjs.net/)
 - [FIS](http://fex-team.github.io/fis3/) - 度厂出品的前端构建工具 文档清晰，功能强大，推荐了解和使用
 - [Gitlab CI](https://ci.gitlab.org/) - 一套基于[Gitlab](https://about.gitlab.com/)的持续集成服务
+- [Travis CI](https://travis-ci.org/) - 为 Github 上的项目打造的 CI 服务。记得 2013年 开始陆续看到文章介绍，刚在官网上看到，目前已经有 30W 开源项目和 23.5W 用户在使用。大概看了一下 [getting started](https://travis-ci.org/getting_started)，简单几步就可以实现开源项目的持续集成。
 
 > Gulp + Webpack 的使用__套路__参考: [learning-gulp](https://github.com/demohi/learning-gulp)
 
@@ -180,10 +181,12 @@
 - [supervisor](https://www.npmjs.com/package/supervisor) - 监控 Node 代码，自动重启。 A supervisor program for running nodejs programs
 - [nodemon](https://github.com/remy/nodemon) - 监控 Node 代码，自动重启。 Nodemon is a utility that will monitor for any changes in your source and automatically restart your server.
 - [pm2](https://www.npmjs.com/package/pm2) - 是一个带有负载均衡功能的 Node 应用的进程管理器； 是 [Forever](https://www.npmjs.com/package/forever) 的进阶库，想了解的可以看这篇文章[《拥抱PM2》](http://se77en.cc/2013/06/27/goodbye-node-forever-hello-pm2-translation/)
+- [cz-cli](https://github.com/commitizen/cz-cli) - 刚用上的一个 ```git ci``` 工具，让我们的项目提交代码更规范、更有套路。打算写篇文章分享下，文章正在准备中，写完后会补地址。
 - [async](https://www.npmjs.com/package/async) - 一个流程控制工具包，提供直接而强大的异步功能
 - [optimist](https://www.npmjs.com/package/optimist) - 当需要处理 ```CLI``` 中的 ```argv``` 时(即命令行传参)，用它就行了
 - [lodash](https://www.npmjs.com/package/lodash) - JS 工具库 ```Underscore.js```的一个 fork 发展而来
 - [socket.io](https://github.com/socketio/socket.io) - 预计 Node 的实时框架 聊天室、页游等对实时性有高要求的较适用
+- [Inquirer.js](https://github.com/SBoudrias/Inquirer.js) - 实现的效果比 [Commander](https://github.com/tj/commander.js) 简单、有趣，贴个 GIF供大家参考：[loc](https://raw.githubusercontent.com/nieweidong/local-info/master/img/loc.gif)
 - [Commander](https://github.com/tj/commander.js) - 用 Commander.js 可以方便的创建基于 Node 的命令行工具，比如 [vue-cli](https://github.com/vuejs/vue-cli) 这类，瞬间觉得自己又高大上了呢~
 - [Mongoose](https://github.com/Automattic/mongoose) - 让 NodeJS 更容易操作 Mongodb 数据库；  附上一篇[Mongoose 学习参考文档](https://cnodejs.org/topic/504b4924e2b84515770103dd)
 - [CNPM](http://npm.taobao.org/) - 淘宝 NPM 镜像，提供了 NPM 同步的服务 当然可不仅仅这样，利用 CNPM 可以打造__企业/个人__私有的 NPM 服务 推荐篇搭建私有NPM的文章：[《CNPM搭建私有的NPM服务》](http://blog.fens.me/nodejs-cnpm-npm/)
@@ -227,6 +230,7 @@ _暂无_
 - [ECMAScript 6入门](http://es6.ruanyifeng.com/) - 阮一峰大神所著，一本开源的JS教程 全面介绍 ECMAScript 6新引入的语法特性
 - [ReactNative 中文版](http://wiki.jikexueyuan.com/project/react-native/) - 翻译自官方的中文文档
 - [ReactWebpackCookBook](https://fakefish.github.io/react-webpack-cookbook/index.html) - 此书会引导读者是进入```React```和```Webpack```的世界。 俩都是非常前沿的技术，同时使用会更有趣。
+- [Sass指南](https://github.com/W3cplus/sass-guidelines) - Sass指南主要作用是用来帮助大家更好的书写 Sass和维护 Sass。
 - [ReactNative 学习指南](https://github.com/ele828/react-native-guide) - 新玩意层出不穷... 对于能持续学习的童鞋，这是个美好的时代
 - [HTML/CSS 编码规范](http://www.css88.com/doc/codeguide/) - 编写灵活、稳定、高质量的```HTML```和```CSS```代码的规范
 - [移动前端入门](http://gold.xitu.io/entry/56c29abfa34131005b8cb1f3) - 入门价值高，移动方向常见问题的较好总结
@@ -246,6 +250,7 @@ _暂无_
 
 <h3 id="interview">前端面试</h3>
 
+- [笔试面试知识整理](https://github.com/HIT-Alibaba/interview) - 打开其 Gitbook 上的地址我都惊呆了。虽然有部分内容待完善，但是光浏览目录都是享受。
 - [在 LinkedIn 做面试官的故事](http://dongfei.baijia.baidu.com/article/52449) - 非面试题，介绍 LinkedIn 的面试过程 文章有很多中肯的建议和想法，推荐阅读
 - [大漠：写给前端面试者](http://www.w3cplus.com/css/write-to-front-end-developer-interview.html) - 这篇文章不涉及任何的面试题 大漠与大家聊聊面试者与被面者之间的感受...
 - [前端面试题](https://github.com/h5bp/Front-end-Developer-Interview-Questions/tree/master/Translations/Chinese) - Git 上非常火的前端面试题，```start17k+```
@@ -254,6 +259,7 @@ _暂无_
 
 <h3 id="otherdev">其他技术</h3>
 
+- [微信小程序开发资源汇总](https://github.com/justjavac/awesome-wechat-weapp) - 天津第一程出品。微信小程序开发资源汇总。
 - [命令行的艺术](https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md) - 熟练使用命令行是优秀工程师的基础
 - [MongoDB 极简实践入门](https://github.com/StevenSLXie/Tutorials-for-Web-Developers/blob/master/MongoDB%20%E6%9E%81%E7%AE%80%E5%AE%9E%E8%B7%B5%E5%85%A5%E9%97%A8.md) - 入门推荐的套路，非常浅显易懂
 - [Mac 设置指南](https://github.com/macdao/ocds-guide-to-setting-up-mac) - Mac 使用必看 尤其适合 偏执狂/强迫症 患者:)
@@ -264,16 +270,16 @@ _暂无_
 
 <h3 id="web">Web</h3>
 
+- [百度脑图](http://naotu.baidu.com) - 非常方便的思维导图工具。功能强、样式佳、无广告，算百度出的良心产品之一。除了 Evernote，脑图是我非常依赖的记录工具
 - [CanIuse](http://caniuse.com/) - __前端必备__；查看浏览器对各种新特性的兼容情况
 - [overapi](http://overapi.com/) - 最全的开发人员在线速查手册
-- [百度脑图](http://naotu.baidu.com) - 非常方便的思维导图工具
-- [ProcessOn](https://www.processon.com/) - 和百度脑图的功能类似，脑图工具。
-- [VimAwesome](http://vimawesome.com/) - Vim 插件集合，__Vim 党必备__
-- [Tower](https://tower.im) - 小而美的多人协同工具。 不光只有 Web 版，还有 iPhone、iPad、Android、微信版。
-- [Slides](https://slides.com/) - 一个所见即所得的 WebPPT 编辑器，非常推荐
+- [ProcessOn](https://www.processon.com/) - 和百度脑图的功能类似，脑图工具。但是还有社交、通讯的功能，提倡 **协作绘图** 的理念。感觉网页跳转的时候有点慢，模板样式比百度脑图好看(个人观点)，而且团队协作的功能真的相当好用。
+- [Slides](https://slides.com/) - 一个所见即所得的 WebPPT 编辑器。虽然装X效果一般，但是比较推荐，因为无论懂不懂 UI，做出来的效果不会太难看
 - [faviconer.co](http://www.faviconer.co/) - 一个所见即所得的icon生成器，很好用
 - [smallpdf](http://smallpdf.com/cn) - 提供各种格式和 PDF 互相转换
 - [Cmd Markdown](https://www.zybuluo.com/mdeditor) - 好用的 Web 版 Markdown 编辑器
+- [VimAwesome](http://vimawesome.com/) - Vim 插件集合，__Vim 党必备__
+- [Tower](https://tower.im) - 小而美的多人协同工具。 不光只有 Web 版，还有 iPhone、iPad、Android、微信版。
 - [StackEdit](https://stackedit.io/editor) - 又是一款 Web 版 Markdown 编辑器
 - [墨刀](https://modao.cc/) - 一个在线移动应用原型制作工具。 旨在帮助产品经理快速制作可在手机端展示的移动应用原型。
 - [htm2pdf](http://www.htm2pdf.co.uk) - HTML to PDF
@@ -304,8 +310,9 @@ Mac 下的软件那么多，又是免费又是付费，应该怎么选呢？我�
 - [iTerm2](http://www.iterm2.com/) - **免费**。```Mac``` 终端功能少又不好看，```iTerm2``` 可以解救你~  推荐篇文章：[《让你的命令行丰富多彩》](http://swiftcafe.io/2015/07/25/iterm/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
 - [HyperDock](https://bahoom.com/hyperdock/) - 售价 ```￥68```，感觉还是很值的(特么我还想说，```Windows``` 数年前就自带的功能，在 ```Mac``` 上还收费，略忧伤)。预览和快速切换窗口太有必要了，能用快捷键控制窗口，能让拖拽到边缘的窗口自动调整大小(window早就有的功能)，真心能提高效率。推荐篇中文的文章：[让Mac的窗口飞](http://www.cnblogs.com/ider/p/let-mac-window-fly-with-hyperdock.html)
 - [ATOM](https://atom.io) - **免费**。2015/7 之前，在桌面环境下偶最喜欢的编辑器是 ```Sublime```，但之后就是 ```ATOM```，俺也专门为它写了篇___[使用纪要](https://github.com/nieweidong/learn-atom)___
-- [Surge](https://itunes.apple.com/us/app/surge-web-developer-tool-proxy/id1040100637) - ```$99.99```。关注 ```IOS``` 开发或者常备梯子的同学，肯定都知道这大名鼎鼎的软件。价钱从 ```￥68``` 涨到 ```$99``` 也让偶咋舌，背后的故事就不细说了，感兴趣可自行去谷歌百度一下。PS：翻墙软件 [小飞机ShadowsocksX](https://shadowsocks.com/) 也非常棒，同样推荐：“轻量级科学上网姿势，改变您的生活体验！”
+- [Surge](https://itunes.apple.com/us/app/surge-web-developer-tool-proxy/id1040100637) - ```$49.99```。关注 ```IOS``` 开发或者常备梯子的同学，肯定都知道这大名鼎鼎的软件。价钱从 ```￥68``` 涨到 ```$99``` 也让偶咋舌，背后的故事就不细说了，感兴趣可自行去谷歌百度一下。PS：翻墙软件 [小飞机ShadowsocksX](https://shadowsocks.com/) 也非常棒，同样推荐：“轻量级科学上网姿势，改变您的生活体验！”
 - [1Password](https://1password.com/) - **免费** 试用一个月，售价不便宜 ```$64.99```。如果觉得对各种账号的密码管理心累，那么推荐你使用，这个钱肯定值，```Mac``` 和 ```iPhone``` 通用，爽歪歪。如果账号密码都是那种一、俩个套路，而且被盗也随意，那么用不用就无所谓啦
+- [Go2Shell](http://zipzapmac.com/Go2Shell) - 一款适合程序员的神器。可以快速在当前目录打开 Shell 的工具，比如直接在 Finder 里打开 ITerm2。
 - [Sequel Pro](http://www.sequelpro.com) - **免费**。好用的Mysql工具
 - [Manico](http://manico.im/) - **免费** 版已经很好用了，全功能版售价 ```￥25```。快捷启动和切换 ```APP``` 的工具，高效的第一步
 - [Moom](http://manytricks.com/moom/) - 售价 **$10**，有试用版。个人觉得这钱花的值，设置快捷键之后可以方便的调整每个窗口的位置。我不管在家还是公司都是开双屏，外接屏幕三分之一 ```iTerm```，三分之二 ```ATOM```，日常使用时各种全屏、居中、靠左、靠右等用快捷键来回着换，辛福感满满的。
@@ -402,6 +409,12 @@ _暂无_
 - [Mongoose](https://github.com/Automattic/mongoose) - 让 NodeJS 更容易操作 Mongodb 数据库。  附上一篇[Mongoose 学习参考文档](https://cnodejs.org/topic/504b4924e2b84515770103dd)
 
 
+<h3 id="client">客户端</h3>
+
+面对大名鼎鼎的 Electron，我懵逼了。犹豫了一会儿，不知道把其放在哪个分类中，于是我单开了一个 **客户端** 的类目。
+
+- [Electron](http://electron.atom.io/) - 如果你想利用 web 技术构建跨平台的桌面程序，那么赶紧来了解 Electron。
+
 <h3 id="ux">设计/交互</h3>
 
 > 作为负责最终效果呈现的前端工程师，多少得了解些 __设计和交互__ 的，这也是为什么 fetool 会单独的存在这一章...当然话又说回来了，偶毕业的第一份工作是设计:)
@@ -421,7 +434,8 @@ _暂无_
 - [Linux命令中文手册](http://linux.51yip.com) - 木有系统的好好学习 Linux，所以命令更不熟悉 真羡慕那些CLI玩的飞起的:)
 - [Git 速查](https://github.com/flyhigher139/Git-Cheat-Sheet/blob/master/Git%20Cheat%20Sheet-Zh.md) - 分类清晰的速查表
 - [jQueryAPI 1.11.3](http://jquery.cuishifeng.cn/) - ZeptoAPI 基本和 jQuery 一样，所以看一份就好
-- [CSS3](http://www.php100.com/manual/css3_0/index.html) - CSS3 的在线手册
+- [CSS](http://www.css88.com/book/css/) - CSS 在线参考手册
+- [Redux 中文文档](http://cn.redux.js.org/index.html) - 作为个前端，React 还是得尝试下的。英文文档就不给大家推荐了~
 - [Express API](http://www.expressjs.com.cn/4x/api.html) - 中文手册:) 4.x和3.x都有
 - [CI用户指南](http://codeigniter.org.cn/user_guide/index.html) - 一个轻量级的 PHP 框架用户指南 推荐指数低的原因是劳资PHP比较弱，囧
 - [Yaf](http://www.laruence.com/manual/) - 鸟哥(惠新宸)所写的 PHP 框架 推荐指数低的原因同上...
@@ -435,6 +449,7 @@ _暂无_
 - [租房要点](https://github.com/soulteary/tenant-point) - 适用于北上广深杭，大城市打拼__租房__确实是硬伤
 - [QQ 群规](https://github.com/jsfront/src/blob/master/qq.md) - 突然某天，有个 QQ 群让我加群 原本我是拒绝的，但当我看完这篇 QQ 群规后... 劳资真的被感动到了，太牛逼、够专业！ 最后，我默默加群鸟:)
 - [.gitignore 文件](https://github.com/github/gitignore) - 介绍不同语言项目的 gitignore 模板
+- [Docsify](https://github.com/QingWei-Li/docsify/) - 一个轻量级的、支持 Markdown语法的文档生成器。ps：还提供了详细的中文文档哦。
 - [程序员如何优雅的挣零花钱？](https://github.com/easychen/howto-make-more-money) - 中肯的文章，如果读完能有些许收获，那么恭喜你
 - [git-draw](https://github.com/ben174/git-draw) - 黑魔法，可以修改自己 Git 上的 Contributions
 - [GitBook](https://www.gitbook.com) - 写记录的好地方
@@ -445,6 +460,7 @@ _暂无_
 
 <h3 id="cool">前端炫技-_炫酷狂拽叼炸天站点_</h3>
 
+- [three.js](https://github.com/mrdoob/three.js) - JavaScript 3D 库。超多的 [examples](http://threejs.org/examples/) 等着你去发现，你只需要关注内存和风扇就行了
 - [windows93](http://www.windows93.net/) - 模拟 Win93 桌面，思路、体验和整体效果比较有意思
 - [GeekTyper](http://geektyper.com/) - 好玩又具有 Geek 精神的网站，虽然创建的目的是个恶作剧 PS：网站需要翻墙
 - [2016.makemepulse.com](http://2016.makemepulse.com/) - 帅哭了。请使用现代浏览器打开
@@ -452,6 +468,7 @@ _暂无_
 - [Mapbox](https://www.mapbox.com/) - 非常叼的开源项目，有方便的 JSAPI(还有 SDK)。 不过免费版只能浅尝，流量有限。 PS：网站需要翻墙
 - [mixitup](https://mixitup.kunkalabs.com/) 一款基于 ```jQuery``` 的 **排序/过滤** 的JS库，最关键是有着美妙的动画效果
 - [Clark Duvall](http://www.clarkduvall.com/) - 一枚歪果仁的个人 blog，范儿叼叼的
+- [earth](https://github.com/cambecc/earth) - 全球天气的可视化项目
 - [SuperScrollorama](http://johnpolacek.github.io/superscrollorama/) - 好玩好看的动画库，链接是 SuperScrollorama 的展示页
 - [parallax.js](http://matthew.wagerfield.com/parallax/) - 一个视差引擎的官网，在电脑和手机上都有很好的体验
 - [CSS字母](http://yusugomori.com/projects/css-sans/fonts) - 用 CSS 实现英文字母，叼叼的
